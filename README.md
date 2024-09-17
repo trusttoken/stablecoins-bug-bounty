@@ -1,4 +1,4 @@
-# Archblock Stablecoins Bug Bounty
+# Archblock (Poland) Stablecoins Bug Bounty
 
 Please contact security@archblock.com to responsibly disclose vulnerabilities.
 
@@ -7,6 +7,7 @@ Please contact security@archblock.com to responsibly disclose vulnerabilities.
 ### Smart Contracts
 
 - 1GBP: `eth:0x86B4dBE5D203e634a12364C0e428fa242A3FbA98`
+- 1USD: `eth:0x403b0a511AC03851496Eb83a2A0fb5204dcDB241`
 
 ### Websites
 
@@ -25,12 +26,12 @@ In addition, we cap all bounty awards to 10% of funds directly affected.
 
 ### Smart Contracts
 
-| Severity | Reported Vulnerability |
-| -------- | ---------------------- |
-| Critical | Unauthorized protocol takeover <br> Direct theft of user funds, other than unclaimed yield <br> Permanent freezing of user funds, other than unclaimed yield <br> Protocol insolvency |
-| High     | Direct theft of unclaimed yield <br> Permanent freezing of unclaimed yield <br> Temporary freezing of user funds |
-| Medium   | Losses due to block stuffing <br> Griefing (i.e., damage to users or protocol with no profit motive) <br> Theft of gas or unbounded gas consumption |
-| Low      | Failure to deliver promised returns, without loss of value |
+| Severity | Example Reported Vulnerability |
+| -------- | ------------------------------ |
+| Critical | - Unauthorized protocol takeover <br> - Direct theft of user funds, other than unclaimed yield <br> - Permanent freezing of user funds, other than unclaimed yield <br> - Protocol insolvency |
+| High     | - Direct theft of unclaimed yield <br> - Permanent freezing of unclaimed yield <br> - Temporary freezing of user funds |
+| Medium   | - Losses due to block stuffing <br> - Griefing (i.e., damage to users or protocol with no profit motive) <br> - Theft of gas or unbounded gas consumption |
+| Low      | - Failure to deliver promised returns, without loss of value |
 
 #### Out of Scope
 
@@ -41,12 +42,12 @@ The following smart contract vulnerabilities are considered out of scope:
 
 ### Websites
 
-| Severity | Reported Vulnerability |
-| -------- | ---------------------- |
-| Critical | Arbitrary remote code execution <br> Taking down the website without DDoS <br> Direct theft of user funds <br> Exfiltration of extremely sensitive data, e.g., private keys or passwords <br> Sensitive state-modifying authenticated actions on behalf of a user, without interaction from that user <br> Subdomain takeover with an already-connected wallet <br> Modifying, substituting, or submitting transactions for an already-connected wallet |
-| High     | Persistent static content injection or modification without JavaScript <br> Exfiltration of confidential user information, e.g., email address, phone number, physical address, etc. <br> Sensitive state-modifying authenticated actions on behalf of a user, with up to one click of user interaction <br> Subdomain takeover without an already-connected wallet
-| Medium   | Reflected static content injection without JavaScript <br> Exfiltration of non-confidential user information, e.g., name, notification settings, etc. <br> Sensitive state-modifying authenticated actions on behalf of a user, requiring extensive or unusual user interaction <br> Non-sensitive state-modifying authenticated actions on behalf of a user, with up to one click of user interaction <br> Open redirect to malicious websites |
-| Low      | Non-sensitive state-modifying authenticated actions on behalf of a user, requiring extensive or unusual user interaction <br> Taking over broken or expired outgoing links, e.g., social media handles, etc. <br> Temporarily preventing user access (except in cases of suspected abuse) |
+| Severity | Example Reported Vulnerability |
+| -------- | ------------------------------ |
+| Critical | - Arbitrary remote code execution <br> - Taking down the website without DDoS <br> - Direct theft of user funds <br> - Exfiltration of extremely sensitive data, e.g., private keys or passwords <br> - Sensitive state-modifying authenticated actions on behalf of a user, without interaction from that user <br> - Subdomain takeover with an already-connected wallet <br> - Modifying, substituting, or submitting transactions for an already-connected wallet |
+| High     | - Persistent static content injection or modification without JavaScript <br> - Exfiltration of confidential user information, e.g., email address, phone number, physical address, etc. <br> - Sensitive state-modifying authenticated actions on behalf of a user, with up to one click of user interaction <br> - Subdomain takeover without an already-connected wallet
+| Medium   | - Reflected static content injection without JavaScript <br> - Exfiltration of non-confidential user information, e.g., name, notification settings, etc. <br> - Sensitive state-modifying authenticated actions on behalf of a user, requiring extensive or unusual user interaction <br> - Non-sensitive state-modifying authenticated actions on behalf of a user, with up to one click of user interaction <br> - Open redirect to malicious websites |
+| Low      | - Non-sensitive state-modifying authenticated actions on behalf of a user, requiring extensive or unusual user interaction <br> - Taking over broken or expired outgoing links, e.g., social media handles, etc. <br> - Temporarily preventing user access (except in cases of suspected abuse) |
 
 #### Out of Scope
 
@@ -70,7 +71,7 @@ All vulnerability disclosures must include a full proof of concept demonstrating
 
 ### Security Researcher Eligibility
 
-Security researchers must undergo a KYC check (full legal name, photograph, and government-issued photo ID) before bounty award.
+Security researchers must undergo a KYC check (full legal name, photograph, and passport) before bounty award.
 If paying out to a blockchain address, we may also require a digital signature to confirm that email and blockchain addresses are controlled by the same person.
 
 We welcome vulnerability disclosures from our employees, auditors, and affiliates. However, they are not eligible for bounty award under this program.
@@ -90,4 +91,4 @@ The following activities are prohibited:
 
 ### Program Modification, Severity Classification, and Award Determination
 
-We may at our discretion modify or cancel this bug bounty program at any time, for any reason, without prior notice. The severity classification of a disclosed vulnerability, as well as the determination of its award amount, is also at our sole and absolute discretion.
+We may, at our sole and absolute discretion, modify or cancel this bug bounty program at any time, for any reason, without prior notice. The severity classification of a disclosed vulnerability, as well as the determination of its award amount, is also at our sole and absolute discretion.
